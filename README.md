@@ -6,4 +6,4 @@ Foi desenvolvido usando a metodologia mobile first
 ## Linguagens usadas
 - Html
 - Css
-- Javascript (para utilixar a biblioteca de slider)
+- Javascript (para utilizar a biblioteca de slider)
