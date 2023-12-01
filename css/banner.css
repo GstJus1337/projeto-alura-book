@@ -1,0 +1,74 @@
+.banner{
+    background: var(--azul-degrade);
+    color: var(--branco);
+    text-align: center;
+    padding: 2.5rem 2rem;
+}
+
+.bannerTitulo{
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.bannerTexto{
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.bannerPesquisa{
+    background-color: transparent;
+    border: 1px solid var(--branco);
+    color: var(--branco);
+    border-radius: 2rem;
+    padding: 0.6rem;
+    outline: none;
+    width: 100%;
+    text-align: center;
+}
+
+.bannerPesquisa::placeholder{
+    font-family: var(--fonte-principal);
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--branco);
+    background: url(../assets/Lupa.svg) no-repeat;
+    background-position: 1em;
+}
+
+.containerBotao:checked ~ .containerRotulo > .cabecalhoMenuHamburguer{
+    background-image: url(../assets/Menu\ Aberto.svg);
+}
+
+.containerBotao:checked ~ .containerRotulo{
+    background: var(--azul-degrade);
+}
+
+@media screen and (min-width: 1024px){
+    .bannerTitulo{
+        font-size: 2.25rem;
+    }
+
+    .bannerPesquisa{
+        width: 50%;
+        padding: 0.8rem;
+    }
+
+    .bannerPesquisa::placeholder{
+        background-position: 5.5rem;
+    }
+}
+
+@media screen and (min-width: 1728px){
+    .bannerPesquisa{
+        width: 35%;
+    }
+
+    .bannerPesquisa::placeholder{
+        background-position: 8rem;
+    }
+
+    .banner{
+        padding: 6rem 0;
+    }
+}

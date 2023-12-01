@@ -1,0 +1,136 @@
+.carrosselTitulo{
+    color: var(--laranja);
+    background-color: var(--branco);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding: 1rem 0 1rem 0;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    display: none;
+} 
+
+.swiper-pagination{
+    position: inherit;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.cardDescricao{
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 0.5rem;
+}
+
+.cardBotoes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes{
+    display: flex;
+}
+
+.card{
+    background: var(--branco);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.descricaoTitulo{
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.descricaoTituloLivro{
+    color: var(--azul);
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+.descricaoTexto{
+    font-size: 0.875rem;
+}
+
+.botoesItem{
+    margin: 0 0.5rem;
+}
+
+.botoesAncora{
+    background-color: var(--laranja);
+    padding: 1rem 2.55rem;
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.estrelasCard{
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 1024px){
+    .carrosselTitulo{
+        font-size: 1.625rem;
+    }
+
+    .swiper-pagination{
+        margin: 2rem 0 1.2rem 0;
+    }
+
+    .swiper{
+        width: 80%;
+    }
+
+    .swiper-button-prev, .swiper-button-next{
+        display: block;
+        color: var(--azul);
+    } 
+
+    .card{
+        width: 50%;
+        margin: 4rem auto;
+    }
+}
+
+@media screen and (min-width:1728px){
+    .carrosselContainer{
+        display: flex;
+        margin: 0 20vw 3rem 20vw;
+        justify-content: center;
+    }
+
+    .swiper-pagination{
+        margin: 3rem 0 2rem 0;
+    }
+    
+    .swiper{
+        width: 100%;
+        margin-right: 2rem;
+    }
+
+    .card{
+        width: 90%;
+        margin-top: 5rem;
+    }
+
+    .descricao{
+        margin-right: 2rem;
+    }
+    
+    .descricaoTitulo{
+        font-size: 2rem;
+    }
+
+    .descricaoTexto{
+        font-size: 1rem;
+    }
+}

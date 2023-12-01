@@ -1,0 +1,161 @@
+.cabecalhoMenuHamburguer{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url(../assets/Menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.cabecalho{
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.containerImagem{
+    padding: 1rem;
+}
+
+.listaMenu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: var(--branco);
+    width: 60vw;
+}
+
+.listaMenuTitulo, .listaMenuLink{
+    padding: 1rem;
+    background-color: var(--branco);
+}
+
+.listaMenuTitulo{
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.listaMenuLink{
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.containerBotao{
+    display: none;
+}
+
+.containerBotao:checked~.listaMenu{
+    display: block;
+}
+
+.containerTitulo{
+    display: none;
+}
+
+.opcoes{
+    display: none;
+}
+
+.containerTexto{
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px){
+
+    .containerTitulo, 
+    .containerTituloNegrito{
+        font-family: var(--fonte-secundaria);
+        font-size: 1.875rem;
+    }
+
+    .containerTitulo{
+        font-weight: 400;
+        display: block;
+    }
+
+    .containerTituloNegrito{
+        font-weight: 700;
+    }
+
+    .cabecalhoMenuHamburguer{
+        display: none;
+    }
+
+    .opcoes{
+        display: flex;
+    }
+
+    .opcoesItem{
+        padding: 0 1rem;
+        text-transform: uppercase;
+    }
+
+    .opcoesLink{
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .containerImagemTransparente{
+        display: none;
+    }
+
+    .opcoesBotao:checked~ .listaMenu{
+        display: block;
+        width: auto;
+    }
+
+    .opcoesBotao{
+        display: none;
+    }
+
+    .opcoesBotao:checked ~ .opcoesRotulo > .opcoesItem{
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+
+    .opcoesItem{
+        padding: 2rem 1rem;
+    }
+
+    .listaMenuLink:hover{
+        background: var(--azul-degrade);
+    }
+    .listaMenuLink:hover > .listaMenuA{
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
+    }
+}
+
+
+@media screen and (min-width:1728px){
+    .containerTexto{
+        display: block;
+    }
+
+    .containerLink{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .cabecalho{
+        padding: 0 2rem;
+    }
+
+    .opcoes{
+        margin-right: auto;
+        margin-left: 2rem;
+    }
+}
